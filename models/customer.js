@@ -60,6 +60,9 @@ class Customer {
   }
 
   /** save this customer. */
+  get fullName(){
+    return `${this.firstName} ${this.lastName}`
+  }
 
   async save() {
     if (this.id === undefined) {
